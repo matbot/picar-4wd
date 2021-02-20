@@ -55,10 +55,7 @@ def start_speed_thread():
 ##################################################################
 # Grayscale 
 def get_grayscale_list():
-    adc_value_list = []
-    adc_value_list.append(gs0.read())
-    adc_value_list.append(gs1.read())
-    adc_value_list.append(gs2.read())
+    adc_value_list = [gs0.read(), gs1.read(), gs2.read()]
     return adc_value_list
 
 
